@@ -1,0 +1,242 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Fitness",
+    "collectionId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+    "dateExported": "2024-09-30T14:23:41.158Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "7b6e46d5-85c7-4f6d-baff-7925e3cb22ce",
+            "name": "User Requests",
+            "containerId": "",
+            "created": "2024-09-30T08:04:42.800Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5dcdafab-e363-4a04-b836-48dbaf66ab9b",
+            "name": "Ground Requests",
+            "containerId": "",
+            "created": "2024-09-30T11:27:28.993Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5c38ea81-160c-4569-a971-17219b686caf",
+            "name": "Booking Requests",
+            "containerId": "",
+            "created": "2024-09-30T12:00:14.662Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "c1403c3e-ba0c-476d-8a67-6890d68f570e",
+            "name": "Match Requests",
+            "containerId": "",
+            "created": "2024-09-30T12:11:18.862Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "8cc40dce-c85b-4a83-806c-c23973d19008",
+            "name": "Gamify Request",
+            "containerId": "",
+            "created": "2024-09-30T14:01:15.616Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2a02ce29-343f-4ea9-af36-f775b04c7f3f",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "7b6e46d5-85c7-4f6d-baff-7925e3cb22ce",
+            "name": "Register new User",
+            "url": "localhost:5000/api/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-30T08:04:58.748Z",
+            "modified": "2024-09-30T12:14:01.770Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userName\": \"Shukku\",\n  \"fullName\": \"Shiva jha\",\n  \"email\": \"Shivajha@gmail.com\",\n  \"description\": \"Love to play with hearts\",\n  \"password\": \"121\",\n  \"role\": \"player\",\n  \"sportsPreferences\": [\"Tennis\", \"cricket\",\"ludo\"],\n  \"location\":\"Haridwar\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "093ee382-0e0b-4217-bf13-983b15a5cf7f",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "7b6e46d5-85c7-4f6d-baff-7925e3cb22ce",
+            "name": "Login User",
+            "url": "localhost:5000/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-30T11:15:57.748Z",
+            "modified": "2024-09-30T11:17:56.365Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"riyagrounds@gmail.com\",\n  \"password\":\"121\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ad1518f3-123b-4476-977f-fdd8b67d0eeb",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "5dcdafab-e363-4a04-b836-48dbaf66ab9b",
+            "name": "Create new Ground",
+            "url": "localhost:5000/api/grounds/create",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-09-30T11:27:42.550Z",
+            "modified": "2024-09-30T13:36:03.963Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZmE4NjE5Zjg1ODMwNTNlYWJjOWI3ZiIsInJvbGUiOiJwbGF5ZXIiLCJpYXQiOjE3Mjc2OTUxMjgsImV4cCI6MTcyNzY5ODcyOH0.aJzCnI99gOXzkZA12Io1C8XXqtlFVatbfjIzkkhKVCw",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"ownerId\":\"66fa90fcb895a9120984addd\",\n    \"name\": \"New Ground\",\n    \"location\": \"Roorkee\",\n    \"availableSports\": [\"cricket\",\"football\"],\n    \"pricePerHour\": 700,\n    \"availability\": {\n        \"from\": \"08:00\",\n        \"to\": \"20:00\"\n    }\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "7b2677eb-8c52-4dab-92c2-f703d5164a36",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "5dcdafab-e363-4a04-b836-48dbaf66ab9b",
+            "name": "Get all Grounds",
+            "url": "localhost:5000/api/grounds",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-09-30T11:40:36.629Z",
+            "modified": "2024-09-30T11:42:40.843Z",
+            "headers": []
+        },
+        {
+            "_id": "77c747e3-33ee-481f-8ded-dc2a4dfc2a52",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "5dcdafab-e363-4a04-b836-48dbaf66ab9b",
+            "name": "Update Ground",
+            "url": "localhost:5000/api/grounds/66fa8d82e10bbd4e1bf4b6d6",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-09-30T11:43:02.793Z",
+            "modified": "2024-09-30T11:44:04.772Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Updated Cricket ground\",\n  \"pricePerHour\":200\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "484101fe-7f09-49cc-a0a8-8389474824a8",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "5c38ea81-160c-4569-a971-17219b686caf",
+            "name": "Create a new booking",
+            "url": "localhost:5000/api/bookings",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-09-30T12:00:42.165Z",
+            "modified": "2024-09-30T12:03:33.234Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"userId\": \"66fa8443a707cf97722af766\",\n    \"groundId\": \"66fa8d82e10bbd4e1bf4b6d6\",\n    \"bookingDate\": \"2024-10-01\",\n    \"duration\": 2\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "d4cc6cd4-39f3-45ea-a420-c0703eee5cf9",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "5c38ea81-160c-4569-a971-17219b686caf",
+            "name": "Confirm booking",
+            "url": "localhost:5000/api/bookings/66fa9395f466ced054935e91/confirm",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-09-30T12:04:53.224Z",
+            "modified": "2024-09-30T12:05:33.507Z",
+            "headers": []
+        },
+        {
+            "_id": "9c02bf13-8ebc-4f6f-b0f9-c9913aaa87c6",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "5c38ea81-160c-4569-a971-17219b686caf",
+            "name": "Get user's booking",
+            "url": "localhost:5000/api/bookings",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-09-30T12:05:57.728Z",
+            "modified": "2024-09-30T12:07:11.511Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":\"66fa8443a707cf97722af766\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "becbe23e-b371-4ce9-ace2-64b7d92e3432",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "c1403c3e-ba0c-476d-8a67-6890d68f570e",
+            "name": "Match Players",
+            "url": "localhost:5000/api/match/players",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-09-30T12:11:54.481Z",
+            "modified": "2024-09-30T13:12:33.277Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"66fa8443a707cf97722af766\",\n  \"sportPreference\": \"Tennis\",\n  \"location\": \"Haridwar\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "3c86b11e-9d64-45e8-ba96-2d95080ab4ab",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "c1403c3e-ba0c-476d-8a67-6890d68f570e",
+            "name": "Ground Match",
+            "url": "localhost:5000/api/match/grounds",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-09-30T12:19:41.289Z",
+            "modified": "2024-09-30T13:36:13.805Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sportsPreference\":\"football\",\n  \"location\":\"roorkee\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "768b9107-2d51-433e-9f71-ef94daf67e4c",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "8cc40dce-c85b-4a83-806c-c23973d19008",
+            "name": "Award System",
+            "url": "localhost:5000/api/gamify/match",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-09-30T14:01:58.386Z",
+            "modified": "2024-09-30T14:10:31.244Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"66fa90668ed4d4123f61656f\",\n  \"sportPreference\": \"cricket\",\n  \"location\": \"Haridwar\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "04ab8563-72d6-4886-9d45-e72340395fe3",
+            "colId": "d6824eb3-2734-4c41-a5f4-6e5ecb9943b8",
+            "containerId": "8cc40dce-c85b-4a83-806c-c23973d19008",
+            "name": "Leaderboard",
+            "url": "localhost:5000/api/gamify/leaderboard",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-09-30T14:06:51.331Z",
+            "modified": "2024-09-30T14:07:35.315Z",
+            "headers": []
+        }
+    ],
+    "ref": "S3KLLD8XdBHdCsX0aebp6zgLBm4hkUOYXI9pWsziC8XzUWwYSE7UumVzFHYuUVA7ZsnuC1kmoDGk5yT-xciw0Q"
+}
